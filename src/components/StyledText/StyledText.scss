@@ -1,0 +1,16 @@
+@import "../../style/Variables.scss";
+
+.Header {
+    font-family: $header-font;
+    font-size: 35px;
+}
+
+.Label {
+    font-family: $body-font;
+    font-size: 20px;
+}
+
+.Body {
+    font-family: $body-font;
+    font-size: 14px;
+}
