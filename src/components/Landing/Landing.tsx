@@ -3,8 +3,9 @@ import "./Landing.scss";
 import { TextStyle } from "../../constants/TextStyles";
 import StyledText from "../StyledText/StyledText";
 import TypeWriter from "../TypeWriter/TypeWriter";
+import Store, {StoreProps} from "../../store/store";
 
-export default class Landing extends React.Component {
+class Landing extends React.Component<StoreProps> {
     componentDidMount() {
         setTimeout(function() {
             let enter = document.getElementById("Enter");
@@ -36,11 +37,15 @@ export default class Landing extends React.Component {
         );
     }
 
-    slideAway() {
+    slideAway = () => {
         let entrance = document.getElementById("Entrance");
         if(entrance) {
             entrance.style.transform = "translateY(-3000px)";
             entrance.style.transition = "3s";
         }
+        const {store} = this.props;
+        store.set('enterClicked')(true);
     }
 }
+
+export default Store.withStore(Landing);
