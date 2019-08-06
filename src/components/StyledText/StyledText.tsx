@@ -9,10 +9,6 @@ interface ComponentProps {
 type StyledTextProps = ComponentProps;
 
 export default class StyledText extends React.Component<StyledTextProps> {
-    constructor(props: StyledTextProps) {
-        super(props);
-    }
-    
     render() {
         switch(this.props.style) {
             case TextStyle.HEADER:
