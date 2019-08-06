@@ -1,1 +1,11 @@
 @import "../../../style/Variables.scss";
+
+.Panel {
+    width: 90%;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    height: 85vh;
+    padding: 5px;
+    background-color: $secondary-color;
+}
