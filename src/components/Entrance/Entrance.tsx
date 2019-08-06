@@ -28,7 +28,7 @@ export default class Entrance extends React.Component<EntranceProps> {
                 <div className="Nameplate">
                     <StyledText style={TextStyle.HEADER}>Riley Jhi</StyledText>
                 </div>
-                <div className="Enter" id="Enter" onClick={this.slideAway}>
+                <div className="Enter" id="Enter" onClick={this.props.handleClick}>
                     <div className="EnterText">
                         <StyledText style={TextStyle.HEADER}>
                             <TypeWriter 
@@ -40,14 +40,5 @@ export default class Entrance extends React.Component<EntranceProps> {
                 </div>
             </div>
         );
-    }
-
-    slideAway = () => {
-        let entrance = document.getElementById("Entrance");
-        if(entrance) {
-            entrance.style.transform = "translateY(-3000px)";
-            entrance.style.transition = "3s";
-        }
-        this.props.handleClick();
     }
 }
