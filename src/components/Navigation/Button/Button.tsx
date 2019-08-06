@@ -2,18 +2,19 @@ import React, { Component } from "react";
 import "./Button.scss";
 import StyledText from "../../StyledText/StyledText";
 import { TextStyle } from "../../../constants/TextStyles";
+import { PanelTypes } from "../../../constants/PageTypes";
 
 interface ComponentProps {
-    text: string;
+    type: PanelTypes
     selected: Boolean;
-    handleClick: () => void;
+    handleClick: (selected: PanelTypes) => void;
 }
 
 export default class Button extends React.Component<ComponentProps> {
     render() {
         return(
-            <div className="Button">
-                <StyledText style={TextStyle.LABEL}>{this.props.text}</StyledText>
+            <div className="Button" onClick={() => this.props.handleClick(this.props.type)}>
+                <StyledText style={TextStyle.LABEL}>{this.props.type.toString()}</StyledText>
             </div>
         )
     }

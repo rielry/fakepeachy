@@ -1,11 +1,10 @@
 import React from "react";
 import "./Navigation.scss";
-import {PanelTypes, PageTypes} from "../../constants/PageTypes";
-import StyledText from "../StyledText/StyledText";
-import { TextStyle } from "../../constants/TextStyles";
+import {PanelTypes} from "../../constants/PageTypes";
 import Button from "./Button/Button";
+import Store, { StoreProps } from "../../store/store";
 
-export default class Navigation extends React.Component {
+class Navigation extends React.Component<StoreProps> {
     render() {
         return(
             <div className="Navigation">
@@ -17,8 +16,9 @@ export default class Navigation extends React.Component {
         )
     }
 
-    handleClick() {
-
+    handleClick = (selectedPanel: PanelTypes) => {
+        const {store} = this.props;
+        store.set("panelDisplayed")(selectedPanel);
     }
 
     getButtons() {
@@ -27,9 +27,10 @@ export default class Navigation extends React.Component {
         for(let type in PanelTypes) {
             buttons.push(
                 <Button 
-                    text={type.toString()} 
+                    type={PanelTypes[type] as PanelTypes}
                     handleClick={this.handleClick}
                     selected={i==0}
+                    key={type}
                 />
             );
             i++;
@@ -37,3 +38,4 @@ export default class Navigation extends React.Component {
         return buttons;
     }
 }
+export default Store.withStore(Navigation);
