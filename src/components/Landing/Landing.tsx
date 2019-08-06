@@ -23,9 +23,14 @@ export default class Landing extends React.Component {
                     <StyledText style={TextStyle.HEADER}>Riley Jhi</StyledText>
                 </div>
                 <div className="Enter" id="Enter">
-                    <StyledText style={TextStyle.HEADER}>
-                        <TypeWriter text={"enter"} interval={500}/>
-                    </StyledText>
+                    <div className="EnterText">
+                        <StyledText style={TextStyle.HEADER}>
+                            <TypeWriter 
+                                text={"enter"} 
+                                interval={750}
+                            />
+                        </StyledText>
+                    </div>
                 </div>
             </div>
         );

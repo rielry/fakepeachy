@@ -25,12 +25,18 @@
         top: 175px;
         height: 70px;
         background-color: $secondary-color;
-        .StyledText {
-            text-align: center;
-            font-size: 20px;
-            letter-spacing: 5px;
-            position: relative;
-            top: 10%;
+        cursor: pointer;
+        .EnterText {
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            > .StyledText {
+                text-align: center;
+                font-size: 20px;
+                letter-spacing: 5px;
+                position: absolute;
+                top: 10%;
+            }
         }
     }
 }
