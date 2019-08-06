@@ -2,6 +2,7 @@ import React from "react";
 import "./Landing.scss";
 import { TextStyle } from "../../constants/TextStyles";
 import StyledText from "../StyledText/StyledText";
+import TypeWriter from "../TypeWriter/TypeWriter";
 
 export default class Landing extends React.Component {
     componentDidMount() {
@@ -11,7 +12,7 @@ export default class Landing extends React.Component {
                 enter.style.transform = "translateY(150px)";
                 enter.style.transition = "2s";
             }
-        }, 0)
+        }, 0);
         
     }
 
@@ -22,7 +23,9 @@ export default class Landing extends React.Component {
                     <StyledText style={TextStyle.HEADER}>Riley Jhi</StyledText>
                 </div>
                 <div className="Enter" id="Enter">
-                    <StyledText style={TextStyle.HEADER}>enter</StyledText>
+                    <StyledText style={TextStyle.HEADER}>
+                        <TypeWriter text={"enter"} interval={500}/>
+                    </StyledText>
                 </div>
             </div>
         );
