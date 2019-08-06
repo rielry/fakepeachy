@@ -18,21 +18,29 @@ export default class Landing extends React.Component {
 
     render() {
         return (
-            <div className="Entrance">
+            <div className="Entrance" id="Entrance">
                 <div className="Nameplate">
                     <StyledText style={TextStyle.HEADER}>Riley Jhi</StyledText>
                 </div>
-                <div className="Enter" id="Enter">
+                <div className="Enter" id="Enter" onClick={this.slideAway}>
                     <div className="EnterText">
                         <StyledText style={TextStyle.HEADER}>
                             <TypeWriter 
                                 text={"enter"} 
-                                interval={750}
+                                interval={500}
                             />
                         </StyledText>
                     </div>
                 </div>
             </div>
         );
+    }
+
+    slideAway() {
+        let entrance = document.getElementById("Entrance");
+        if(entrance) {
+            entrance.style.transform = "translateY(-3000px)";
+            entrance.style.transition = "3s";
+        }
     }
 }
