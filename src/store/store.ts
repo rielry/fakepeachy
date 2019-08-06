@@ -1,12 +1,15 @@
 import { Effects, Store, createConnectedStore } from 'undux';
 import effects from "./effects";
+import { PageTypes, PanelTypes } from '../constants/PageTypes';
 
 type State = {
-    enterClicked: Boolean
+    pageDisplayed: PageTypes,
+    panelDisplayed: PanelTypes
 }
 
 const initialState: State = {
-    enterClicked: false
+    pageDisplayed: PageTypes.NAME_PLATE,
+    panelDisplayed: PanelTypes.ABOUT
 }
 
 export default createConnectedStore(initialState, effects);
