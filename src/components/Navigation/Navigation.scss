@@ -1,0 +1,21 @@
+@import "../../style/Variables.scss";
+
+.Navigation {
+    width: 90%;
+    margin: 0 auto;
+    .Buttons {
+        margin-top: 20px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px 5px;        
+    }
+
+    hr {
+        margin: 0 auto;
+        border: none;
+        background-color: $secondary-color;
+        height: 1px;
+        color: $secondary-color;
+    }
+}

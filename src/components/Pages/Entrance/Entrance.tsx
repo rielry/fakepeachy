@@ -1,8 +1,8 @@
 import React from "react";
 import "./Entrance.scss";
-import StyledText from "../StyledText/StyledText";
-import { TextStyle } from "../../constants/TextStyles";
-import TypeWriter from "../TypeWriter/TypeWriter";
+import StyledText from "../../StyledText/StyledText";
+import { TextStyle } from "../../../constants/TextStyles";
+import TypeWriter from "../../TypeWriter/TypeWriter";
 
 interface ComponentProps {
     handleClick: () => void;

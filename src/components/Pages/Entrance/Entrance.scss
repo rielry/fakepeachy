@@ -1,6 +1,7 @@
-@import "../../style/Variables.scss";
+@import "../../../style/Variables.scss";
 
 .Entrance {
+    display: block;
     text-align: center;
     .StyledText{
         color: $primary-color;

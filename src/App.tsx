@@ -1,5 +1,5 @@
 import React from "react";
-import Landing from "./components/Landing/Landing";
+import Home from "./components/Home/Home";
 import "../src/style/App.scss";
 import Store from "./store/store"
 
@@ -8,7 +8,7 @@ class App extends React.Component {
     return (
       <Store.Container>
         <div className="App">
-          <Landing/>
+          <Home/>
         </div>
       </Store.Container>
     );
