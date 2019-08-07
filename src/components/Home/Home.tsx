@@ -11,13 +11,13 @@ class Home extends React.Component<StoreProps> {
     render() {
         const {store} = this.props;
         let pageDisplayed = store.get("pageDisplayed");
-        switch(pageDisplayed) {
-            case PageTypes.MAIN_PAGE:
-                return(<Main displayedPanel={store.get("panelDisplayed")}/>);
-            default:
-                return (<Entrance handleClick={this.removeNameplate}/>);
-        }
-        // return(<Main/>);
+        // switch(pageDisplayed) {
+        //     case PageTypes.MAIN_PAGE:
+        //         return(<Main displayedPanel={store.get("panelDisplayed")}/>);
+        //     default:
+        //         return (<Entrance handleClick={this.removeNameplate}/>);
+        // }
+        return(<Main displayedPanel={store.get("panelDisplayed")}/>);
 
     }
 

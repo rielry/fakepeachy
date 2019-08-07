@@ -3,15 +3,25 @@ import "./Navigation.scss";
 import {PanelTypes} from "../../constants/PageTypes";
 import Button from "./Button/Button";
 import Store, { StoreProps } from "../../store/store";
+import StyledText from "../StyledText/StyledText";
+import { TextStyle } from "../../constants/TextStyles";
 
 class Navigation extends React.Component<StoreProps> {
     render() {
         return(
             <div className="Navigation">
-                <div className="Buttons">
-                    {this.getButtons()}
+                <div className="Profile">
+                    <div className="Image">
+                        <div className="placeholder"></div>
+                        {/* <img src="./info.png"></img> */}
+                    </div>
+                    <div className="Bio">
+                        <StyledText style={TextStyle.LABEL}>Riley Jhi</StyledText>
+                    </div>
+                    <div className="Buttons">
+                        {this.getButtons()}
+                    </div>
                 </div>
-                <hr/>
             </div>
         )
     }
