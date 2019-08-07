@@ -1,12 +1,12 @@
 import React from "react";
-import "./Home.scss";
+import "./AppBody.scss";
 import Store, {StoreProps} from "../../store/store";
 import Entrance from "../Pages/Entrance/Entrance";
 import {PageTypes} from "../../constants/PageTypes";
-import Main from "../Pages/Main/Main";
+import Home from "../Pages/Home/Home";
 
 
-class Home extends React.Component<StoreProps> {
+class AppBody extends React.Component<StoreProps> {
  
     render() {
         const {store} = this.props;
@@ -17,7 +17,7 @@ class Home extends React.Component<StoreProps> {
         //     default:
         //         return (<Entrance handleClick={this.removeNameplate}/>);
         // }
-        return(<Main displayedPanel={store.get("panelDisplayed")}/>);
+        return(<Home displayedPanel={store.get("panelDisplayed")}/>);
 
     }
 
@@ -34,4 +34,4 @@ class Home extends React.Component<StoreProps> {
 
 }
 
-export default Store.withStore(Home);
+export default Store.withStore(AppBody);
