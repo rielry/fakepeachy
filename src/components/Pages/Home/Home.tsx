@@ -13,7 +13,7 @@ export default class Home extends React.Component<ComponentProps> {
         return (
             <div className="Home">
                 <Navigation/>
-                <About/>
+                {this.getPanelContent()}
             </div>
         )
     }
@@ -27,7 +27,7 @@ export default class Home extends React.Component<ComponentProps> {
             case PanelTypes.RESUME:
                 return(<div>resume</div>)
             default:
-                return(<div>about</div>)
+                return (<About/>)
         }
     }
 }

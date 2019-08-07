@@ -18,9 +18,13 @@ export default class About extends React.Component {
                     <div className="Text">
                         <StyledText style={TextStyle.BODY}>
                             Hi there, I'm so happy to see you here!  
+                        </StyledText>
+                        <StyledText style={TextStyle.BODY}>
                             My name is Riley. I'm a senior at University of Nebraska - Lincoln, studying computer science and studio art.
                             During my spare time, I like to paint, draw, play music, take photos, and of course, code!
-                            Shoot me a message at riley.jhi@gmail.com
+                        </StyledText>
+                        <StyledText style={TextStyle.BODY}>
+                            This website was creating with React, TypeScript, and Undux. Feel free to take a look around!
                         </StyledText>
                     </div>
                 </div>

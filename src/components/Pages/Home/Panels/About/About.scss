@@ -8,7 +8,7 @@
         position: relative;
         padding: 20px 15px 0px 15px;
         .Welcome {
-            margin-bottom: 20px;
+            margin-bottom: 50px;
         }
         .Image {
             width: 80%;
@@ -21,8 +21,14 @@
             }
         }
         .Text {
+            margin-top: 20px;
             padding: 30px;
+            .StyledText {
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
-        
     }
 }

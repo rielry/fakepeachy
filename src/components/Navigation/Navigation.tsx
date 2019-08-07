@@ -32,23 +32,28 @@ class Navigation extends React.Component<StoreProps> {
     }
 
     handleClick = (selectedPanel: PanelTypes) => {
+        if(selectedPanel == PanelTypes.ART) {
+            
+        }
+
         const {store} = this.props;
         store.set("panelDisplayed")(selectedPanel);
     }
 
     getButtons() {
+        const {store} = this.props;
         let buttons: JSX.Element[] = [];
-        let i = 0;
+
         for(let type in PanelTypes) {
+            let panel = PanelTypes[type] as PanelTypes;
             buttons.push(
                 <Button 
-                    type={PanelTypes[type] as PanelTypes}
+                    type={panel}
                     handleClick={this.handleClick}
-                    selected={i==0}
+                    selected={store.get("panelDisplayed")==panel}
                     key={type}
                 />
             );
-            i++;
         }
         return buttons;
     }
