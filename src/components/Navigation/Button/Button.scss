@@ -1,17 +1,25 @@
 @import "../../../style/Variables.scss";
 
-.Button {
-    cursor: pointer;
-    padding: 4px;
-    border-radius: 3px;
-    background-color: $tertiary-color;
-    transition: 0.3s;
-    .StyledText {
-        color: $primary-color;
+.ButtonGroup {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    margin: 0 auto;
+    .Icon {
+        height: 20px;
+        width: 20px;
+        border-radius:13px;
+        background-color: $tertiary-color;
+        margin-right: 20px;
     }
-
-    &:hover {
-        background-color: rgba($accent-color, 0.5);
-        transition: 0.3s;
+    .Button {
+        position: relative;
+        cursor: pointer;
+        top: 2px;
+        margin-bottom: 40px;
+        .StyledText {
+            color: $primary-color;
+            font-size: 13px;
+        }
     }
 }

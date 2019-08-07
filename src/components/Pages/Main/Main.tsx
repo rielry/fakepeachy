@@ -14,9 +14,6 @@ export default class Main extends React.Component<MainProps> {
         return (
             <div className="Main">
                 <Navigation/>
-                <div className="Panel">
-                {this.getPanelContent()}
-                </div>
             </div>
         )
     }
