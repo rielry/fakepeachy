@@ -3,8 +3,9 @@ import "./About.scss";
 import StyledText from "../../../../StyledText/StyledText";
 import { TextStyle } from "../../../../../constants/TextStyles";
 import Profile from "./Profile/Profile";
-import GitHub from "../../../../../constants/Icons/GitHub.png"
-import LinkedIn from "../../../../../constants/Icons/LinkedIn.png"
+import GitHub from "../../../../../constants/Icons/GitHub.png";
+import LinkedIn from "../../../../../constants/Icons/LinkedIn.png";
+import MainImage from "../../../../../constants/Images/MainImage.png";
 
 
 export default class About extends React.Component {
@@ -16,6 +17,7 @@ export default class About extends React.Component {
                         <StyledText style={TextStyle.DISPLAY}>Welcome, thanks for stopping by!</StyledText>
                     </div>
                     <div className="Image">
+                        <img src={MainImage}></img>
                         <div className="placeholder"></div>
                     </div>
                     <div className="Text">
