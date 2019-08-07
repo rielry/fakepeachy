@@ -5,7 +5,8 @@ export enum PageTypes {
 
 export enum PanelTypes { 
     ABOUT = "About",
+    RESUME = "Resume",
     ART = "Art",
-    CODING ="Coding",
-    RESUME = "Resume"
+    CODING = "Coding",
+    INFO = "Information"
 }
