@@ -1,5 +1,6 @@
 export enum TextStyle {
     LABEL,
     HEADER,
-    BODY
+    BODY,
+    DISPLAY
 }

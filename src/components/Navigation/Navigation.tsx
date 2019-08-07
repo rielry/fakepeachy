@@ -16,7 +16,12 @@ class Navigation extends React.Component<StoreProps> {
                         {/* <img src="./info.png"></img> */}
                     </div>
                     <div className="Bio">
-                        <StyledText style={TextStyle.LABEL}>Riley Jhi</StyledText>
+                        <div className="Name">
+                            <StyledText style={TextStyle.LABEL}>Riley Jhi</StyledText>
+                        </div>
+                        <div className="Info">
+                            <StyledText style={TextStyle.BODY}>University of Nebraska - Lincoln</StyledText>
+                        </div>
                     </div>
                     <div className="Buttons">
                         {this.getButtons()}

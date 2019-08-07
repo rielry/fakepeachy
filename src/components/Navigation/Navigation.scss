@@ -22,17 +22,24 @@
             }
         }
         .Bio {
+            margin-top: 30px;
             text-align:center;
-            > .StyledText {
-                margin-top: 20px;
-                color: $secondary-color;
-                font-size: 25px;
+            .Name {
+                > .StyledText {
+                    color: rgba($secondary-color, 0.9);
+                    font-size: 25px;
+                }
+            }
+            .Info {
+                > .StyledText {
+                    color: rgba($tertiary-color, 0.5);
+                }
             }
         }
     }
 
     .Buttons {
-        margin-top: 70px;
+        margin-top: 50px;
     }
 
     hr {

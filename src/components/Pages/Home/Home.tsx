@@ -1,19 +1,19 @@
 import React from "react";
-import "./Main.scss";
+import "./Home.scss";
 import Navigation from "../../Navigation/Navigation";
 import { PanelTypes } from "../../../constants/PageTypes";
+import About from "./Panels/About/About";
 
 interface ComponentProps {
     displayedPanel: PanelTypes;
 }
 
-type MainProps = ComponentProps;
-
-export default class Main extends React.Component<MainProps> {
+export default class Home extends React.Component<ComponentProps> {
     render() {
         return (
-            <div className="Main">
+            <div className="Home">
                 <Navigation/>
+                <About/>
             </div>
         )
     }
