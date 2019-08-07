@@ -30,5 +30,18 @@
                 }
             }
         }
+        .ProfilesWrapper {
+            display: block;
+            float: right;
+            .Profiles {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 130px;
+                justify-content: space-around;
+                position: relative;
+                right: 0;
+            }
+        }
     }
 }

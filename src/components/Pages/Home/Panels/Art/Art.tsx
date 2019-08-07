@@ -12,9 +12,9 @@ export default class Art extends React.Component {
                 <SideNavigation/>
                 <div className="Content">
                     <div className="Information">
-                        <div className="GeneralInfo">
+                        {/* <div className="GeneralInfo">
                             <StyledText style={TextStyle.HEADER}>Art</StyledText>
-                        </div>
+                        </div> */}
                         <div className="DisplayedInfo">
                             <div className="DisplayedTitle">
                                 <StyledText style={TextStyle.LABEL}>Title</StyledText>

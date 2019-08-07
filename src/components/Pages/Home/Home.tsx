@@ -35,6 +35,8 @@ export default class Home extends React.Component<ComponentProps> {
                 return(<div>coding</div>)
             case PanelTypes.RESUME:
                 return(<div>resume</div>)
+            case PanelTypes.INFO:
+                return(<div>info</div>)
             default:
                 return (<About/>)
         }
