@@ -6,13 +6,17 @@
     width: 100px;
     margin: 0 auto;
     cursor: pointer;
-    .Icon {
+    .Icon, .SelectedIcon {
         flex-shrink: 0;
         height: 20px;
         width: 20px;
         border-radius:13px;
-        background-color: $tertiary-color;
+        background-color: lighten($accent-color, 15%);
         margin-right: 20px;
+        transition: 0.3s;
+    }
+    .SelectedIcon {
+        background-color: lighten($accent-color, 40%);
     }
     .Button {
         position: relative;
