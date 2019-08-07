@@ -13,9 +13,9 @@ interface ComponentProps {
 export default class Button extends React.Component<ComponentProps> {
     render() {
         return(
-            <div className="ButtonGroup">
+            <div className="ButtonGroup" onClick={() => this.props.handleClick(this.props.type)}>
                 <div className="Icon"></div>
-                <div className="Button" onClick={() => this.props.handleClick(this.props.type)}>
+                <div className="Button">
                     <StyledText style={TextStyle.LABEL}>{this.props.type.toString()}</StyledText>
                 </div>
             </div>
