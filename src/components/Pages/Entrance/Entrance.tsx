@@ -34,6 +34,7 @@ export default class Entrance extends React.Component<EntranceProps> {
                             <TypeWriter 
                                 text={"enter"} 
                                 interval={500}
+                                flicker={6}
                             />
                         </StyledText>
                     </div>

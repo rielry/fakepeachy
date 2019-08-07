@@ -3,13 +3,14 @@ import React from "react";
 interface ComponentProps {
     text: string;
     interval: number;
-    flicker?: Boolean;
+    flicker?: number;
 }
 
 interface ComponentState {
     displayed: string;
     index: number;
     flickerOn: Boolean;
+    flickerCount: number;
 }
 
 type TypeWriterProps = ComponentProps;
@@ -21,24 +22,43 @@ export default class TypeWriter extends React.Component<TypeWriterProps, Compone
         this.state = {
             displayed: "",
             index: 0,
-            flickerOn: false
+            flickerOn: false,
+            flickerCount: 0
         }
         this.interval = 0;
     }
-
+    
     componentDidMount() {
         this.interval = setInterval(() => {
-            let index = this.state.index;
-            
-            if (index < this.props.text.length) {
-                let displayed = this.state.displayed + this.props.text[index];
-                this.setState({displayed: displayed, index: index+1});
-            } else {
-                if(this.state.flickerOn) {
-                    this.setState({displayed: this.props.text, flickerOn: false});
+            if(this.props.flicker) {
+                let flickerCount = this.state.flickerCount;
+                if(flickerCount < this.props.flicker) {
+                    if(this.state.flickerOn) {
+                        this.setState({displayed: "", flickerOn: false, flickerCount: flickerCount+1});
+                    } else {
+                        this.setState({displayed: "|", flickerOn: true,flickerCount: flickerCount+1});
+                    }   
                 } else {
-                    this.setState({displayed: this.props.text + "|", flickerOn: true});
-                }   
+                    let index = this.state.index;
+                
+                    if (index < this.props.text.length) {
+                        let displayed = this.state.displayed + this.props.text[index];
+                        this.setState({displayed: displayed, index: index+1});
+                    } else {
+                        if(this.state.flickerOn) {
+                            this.setState({displayed: this.props.text, flickerOn: false});
+                        } else {
+                            this.setState({displayed: this.props.text + "|", flickerOn: true});
+                        }   
+                    }
+                }
+            } else {
+                let index = this.state.index;
+                
+                if (index < this.props.text.length) {
+                    let displayed = this.state.displayed + this.props.text[index];
+                    this.setState({displayed: displayed, index: index+1});
+                }
             }
         }, this.props.interval);
         
