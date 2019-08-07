@@ -6,7 +6,11 @@ import Store, { StoreProps } from "../../store/store";
 import StyledText from "../StyledText/StyledText";
 import { TextStyle } from "../../constants/TextStyles";
 
-class Navigation extends React.Component<StoreProps> {
+interface ComponentProps {
+    slide?: Boolean
+}
+
+class Navigation extends React.Component<StoreProps & ComponentProps> {
     render() {
         return(
             <div className="Navigation">
