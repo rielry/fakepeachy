@@ -1,19 +1,18 @@
 import React from "react";
 import "./Navigation.scss";
-import Navigation from "./Navigation";
 
-export default class SideNavigation extends React.Component {
+interface ComponentProps {
+    handleClick: () => void;
+}
+
+export default class SideNavigation extends React.Component<ComponentProps> {
     render() {
         return (
-            <div className="SideNavigation" onClick={this.getFullNavigation}>
-                <div className="Icon">
+            <div className="SideNavigation">
+                <div className="Icon" onClick={() => this.props.handleClick()}>
                     <div className="placeholder"></div>
                 </div>
             </div>
         );
-    }
-
-    getFullNavigation() {
-        return (<Navigation/>)
     }
 }

@@ -9,9 +9,9 @@ interface ComponentProps {
 export default class Profile extends React.Component<ComponentProps> {
     render() {
         return (
-            <div className="Profile" onClick={() => window.open(this.props.link, "_blank")}>
+            <a href={this.props.link} className="Profile">
                 <img src={this.props.img}></img>
-            </div>
+            </a>
         )
     }
 }

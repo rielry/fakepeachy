@@ -7,7 +7,8 @@ import StyledText from "../StyledText/StyledText";
 import { TextStyle } from "../../constants/TextStyles";
 
 interface ComponentProps {
-    slide?: Boolean
+    slide?: Boolean,
+    handleClick: () => void
 }
 
 class Navigation extends React.Component<StoreProps & ComponentProps> {
@@ -37,7 +38,7 @@ class Navigation extends React.Component<StoreProps & ComponentProps> {
 
     handleClick = (selectedPanel: PanelTypes) => {
         if(selectedPanel == PanelTypes.ART) {
-            
+            this.props.handleClick();
         }
 
         const {store} = this.props;

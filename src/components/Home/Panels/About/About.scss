@@ -1,4 +1,4 @@
-@import "../../../../../style/Variables.scss";
+@import "../../../../style/Variables.scss";
 
 .About {
     height: 100vh;
@@ -6,7 +6,7 @@
     overflow: auto;
     .Content {
         position: relative;
-        padding: 20px 15px 0px 15px;
+        padding: 20px 15px;
         .Welcome {
             margin-bottom: 50px;
         }
