@@ -9,7 +9,7 @@ import Acitivities from "./Activities/Activities";
 export default class Resume extends React.Component {
     render() {
         return (
-            <div className="Resume">
+            <div className="Panel">
                 <div className="Content">
                     <Education/>
                     <Honors/>

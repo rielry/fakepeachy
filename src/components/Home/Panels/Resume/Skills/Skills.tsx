@@ -18,7 +18,6 @@ export default class Skills extends React.Component {
                         <Skill skill="SQL" level={3}></Skill>
                         <Skill skill="D3.js" level={3}></Skill>
                         <Skill skill="jQuery" level={2}></Skill>
-                        <Skill skill="Adobe Photoshop" level={2}></Skill>
                         <Skill skill="Python" level={2}></Skill>
                         <Skill skill="AngularJS" level={2}></Skill>
                         <Skill skill="SAP UI 5" level={2}></Skill>
