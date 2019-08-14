@@ -2,5 +2,6 @@ export enum TextStyle {
     LABEL,
     HEADER,
     BODY,
-    DISPLAY
+    DISPLAY,
+    BODY_ITALIC
 }

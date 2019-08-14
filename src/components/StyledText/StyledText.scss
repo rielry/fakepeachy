@@ -15,6 +15,12 @@
     font-size: 14px;
 }
 
+.BodyItalic {
+    font-family: $body-font;
+    font-size: 14px;
+    font-style: italic;
+}
+
 .Display {
     font-family: $accent-font;
     font-size: 40px;

@@ -4,6 +4,7 @@ import Navigation from "../Navigation/Navigation";
 import { PanelTypes } from "../../constants/PageTypes";
 import About from "./Panels/About/About";
 import Art from "./Panels/Art/Art";
+import Resume from "./Panels/Resume/Resume";
 import SideNavigation from "../Navigation/SideNavigation";
 import Store, { StoreProps } from "../../store/store";
 
@@ -52,11 +53,11 @@ class Home extends React.Component<StoreProps & ComponentProps, ComponentState> 
     getPanelContent() {
         switch(this.props.displayedPanel) {
             case PanelTypes.ART:
-                return(<Art/>)
+                return(<Art/>);
             case PanelTypes.CODING:
                 return(<div>coding</div>)
             case PanelTypes.RESUME:
-                return(<div>resume</div>)
+                return(<Resume/>);
             case PanelTypes.INFO:
                 return(<div>info</div>)
             default:
