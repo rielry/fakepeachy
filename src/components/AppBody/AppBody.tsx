@@ -1,22 +1,14 @@
 import React from "react";
 import "./AppBody.scss";
 import Store, {StoreProps} from "../../store/store";
-import Entrance from "../Pages/Entrance/Entrance";
 import {PageTypes} from "../../constants/PageTypes";
-import Home from "../Pages/Home/Home";
+import Home from "../Home/Home";
 
 
 class AppBody extends React.Component<StoreProps> {
  
     render() {
         const {store} = this.props;
-        let pageDisplayed = store.get("pageDisplayed");
-        // switch(pageDisplayed) {
-        //     case PageTypes.MAIN_PAGE:
-        //         return(<Main displayedPanel={store.get("panelDisplayed")}/>);
-        //     default:
-        //         return (<Entrance handleClick={this.removeNameplate}/>);
-        // }
         return(<Home displayedPanel={store.get("panelDisplayed")}/>);
 
     }

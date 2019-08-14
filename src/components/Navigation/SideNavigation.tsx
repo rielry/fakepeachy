@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navigation.scss";
-import Navigation from "./Navigation";
 
 interface ComponentProps {
     handleClick: () => void;
@@ -9,8 +8,8 @@ interface ComponentProps {
 export default class SideNavigation extends React.Component<ComponentProps> {
     render() {
         return (
-            <div className="SideNavigation" onClick={() => this.props.handleClick()}>
-                <div className="Icon">
+            <div className="SideNavigation">
+                <div className="Icon" onClick={() => this.props.handleClick()}>
                     <div className="placeholder"></div>
                 </div>
             </div>

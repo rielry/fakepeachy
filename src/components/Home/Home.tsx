@@ -1,11 +1,11 @@
 import React from "react";
 import "./Home.scss";
-import Navigation from "../../Navigation/Navigation";
-import { PanelTypes } from "../../../constants/PageTypes";
+import Navigation from "../Navigation/Navigation";
+import { PanelTypes } from "../../constants/PageTypes";
 import About from "./Panels/About/About";
 import Art from "./Panels/Art/Art";
-import SideNavigation from "../../Navigation/SideNavigation";
-import Store, { StoreProps } from "../../../store/store";
+import SideNavigation from "../Navigation/SideNavigation";
+import Store, { StoreProps } from "../../store/store";
 
 interface ComponentProps {
     displayedPanel: PanelTypes;

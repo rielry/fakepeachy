@@ -1,11 +1,11 @@
 import React from "react";
 import "./About.scss";
-import StyledText from "../../../../StyledText/StyledText";
-import { TextStyle } from "../../../../../constants/TextStyles";
+import StyledText from "../../../StyledText/StyledText";
+import { TextStyle } from "../../../../constants/TextStyles";
 import Profile from "./Profile/Profile";
-import GitHub from "../../../../../constants/Icons/GitHub.png";
-import LinkedIn from "../../../../../constants/Icons/LinkedIn.png";
-import MainImage from "../../../../../constants/Images/MainImage.png";
+import GitHub from "../../../../constants/Icons/GitHub.png";
+import LinkedIn from "../../../../constants/Icons/LinkedIn.png";
+import MainImage from "../../../../constants/Images/MainImage.png";
 
 
 export default class About extends React.Component {
