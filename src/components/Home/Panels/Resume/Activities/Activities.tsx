@@ -1,6 +1,7 @@
 import React from "react";
 import StyledText from "../../../../StyledText/StyledText";
 import { TextStyle } from "../../../../../constants/TextStyles";
+import Activity from "./Activity";
 
 export default class Acitivities extends React.Component {
     render() {
@@ -8,21 +9,24 @@ export default class Acitivities extends React.Component {
             <div className="Section">
                 <StyledText style={TextStyle.DISPLAY}>Activities</StyledText>
                 <div className="SectionContent">
-                    <div className="Activity">
-                        <StyledText style={TextStyle.BODY}>Peer Mentor</StyledText>
-                        <StyledText style={TextStyle.BODY}>University Honors Program, University of Nebraska - Lincoln</StyledText>
-                        <StyledText style={TextStyle.BODY_ITALIC}>blah</StyledText>
-                    </div>
-                    <div className="Activity">
-                        <StyledText style={TextStyle.BODY}>Initialize UNL (Computer Science and Engineering Ambassadors)</StyledText>
-                        <StyledText style={TextStyle.BODY}>University of Nebraska - Lincoln</StyledText>
-                        <StyledText style={TextStyle.BODY_ITALIC}>blah</StyledText>
-                    </div>
-                    <div className="Activity">
-                        <StyledText style={TextStyle.BODY}>Peer Mentor</StyledText>
-                        <StyledText style={TextStyle.BODY}>Department of Computer Science & Engineering, University of Nebraska - Lincoln</StyledText>
-                        <StyledText style={TextStyle.BODY_ITALIC}>blah</StyledText>
-                    </div>
+                    <Activity
+                        title="Peer Mentor"
+                        entity="Department of Computer Science & Engineering, University of Nebraska - Lincoln"
+                        startDate="January 2018"
+                    />
+                    <Activity
+                        title="Initialize UNL (Formerly Computer Science and Engineering Ambassadors)"
+                        entity="University of Nebraska - Lincoln"
+                        description="Public Relations Chair"
+                        startDate="January 2017"
+                        endDate="May 2018"
+                    />
+                    <Activity
+                        title="Peer Mentor"
+                        entity="University Honors Program, University of Nebraska - Lincoln"
+                        startDate="January 2016"
+                        endDate="October 2017"
+                    />
                 </div>
             </div>
         )

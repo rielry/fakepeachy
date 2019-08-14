@@ -3,7 +3,7 @@ import "./Resume.scss";
 import Education from "./Education/Education";
 import Honors from "./Honors/Honors";
 import Skills from "./Skills/Skills";
-import Experience from "./Experience/Experience";
+import Experiences from "./Experiences/Experiences";
 import Acitivities from "./Activities/Activities";
 
 export default class Resume extends React.Component {
@@ -14,7 +14,7 @@ export default class Resume extends React.Component {
                     <Education/>
                     <Honors/>
                     <Skills/>
-                    <Experience/>
+                    <Experiences/>
                     <Acitivities/>
                 </div>
             </div>
