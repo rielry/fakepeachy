@@ -11,7 +11,7 @@ import MainImage from "../../../../constants/Images/MainImage.png";
 export default class About extends React.Component {
     render() {
         return (
-            <div className="About">
+            <div className="Panel">
                 <div className="Content">
                     <div className="Welcome">
                         <StyledText style={TextStyle.DISPLAY}>Welcome, thanks for stopping by!</StyledText>
