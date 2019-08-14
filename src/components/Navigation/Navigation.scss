@@ -62,12 +62,18 @@
         height: 40px;
         margin: 0 auto;
         cursor: pointer;
+        border-radius: 2px;
+        transition: 0.3s;
+        &:hover {
+            background-color: lighten($accent-color, 20%);
+        }
         > svg {
-            
             width: 30px;
             height: 30px;
             fill: $accent-color;
             transform: rotate(180deg);
+            border-radius:20px;
+            padding: 3px;
         }
         .placeholder {
             width: 100%;
