@@ -16,7 +16,9 @@ export default class StyledText extends React.Component<StyledTextProps> {
             case TextStyle.LABEL:
                 return(<div className="StyledText Label">{this.props.children}</div>);
             case TextStyle.DISPLAY:
-                return(<div className="StyledText Display">{this.props.children}</div>)
+                return(<div className="StyledText Display">{this.props.children}</div>);
+            case TextStyle.BODY_ITALIC:
+                return (<div className="StyledText BodyItalic">{this.props.children}</div>)
             default:
                 return(<div className="StyledText Body">{this.props.children}</div>);
         }
