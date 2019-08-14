@@ -4,12 +4,25 @@ import Navigation from "../../Navigation/Navigation";
 import { PanelTypes } from "../../../constants/PageTypes";
 import About from "./Panels/About/About";
 import Art from "./Panels/Art/Art";
+import SideNavigation from "../../Navigation/SideNavigation";
+import Store, { StoreProps } from "../../../store/store";
 
 interface ComponentProps {
     displayedPanel: PanelTypes;
 }
 
-export default class Home extends React.Component<ComponentProps> {
+interface ComponentState {
+    fullNav: Boolean
+}
+
+class Home extends React.Component<StoreProps & ComponentProps, ComponentState> {
+    constructor(props: ComponentProps & StoreProps) {
+        super(props);
+        this.state = {
+            fullNav: true
+        }
+    }
+
     render() {
         return (
             <div className="Home">
@@ -20,11 +33,20 @@ export default class Home extends React.Component<ComponentProps> {
     }
 
     getNavigation() {
-        if(this.props.displayedPanel == PanelTypes.ART) {
+        if(this.state.fullNav) {
+            return (<Navigation handleClick={this.toggleNavigation}/>);
+        } 
+        return(<SideNavigation handleClick={this.toggleNavigation}/>);
+    }
 
-        } else {
-            return (<Navigation/>);
+    toggleNavigation = () => {
+        if(!this.state.fullNav) {
+            const {store} = this.props;
+            store.set("panelDisplayed")(PanelTypes.ABOUT);
         }
+        this.setState({
+            fullNav: !this.state.fullNav
+        })
     }
 
     getPanelContent() {
@@ -42,3 +64,4 @@ export default class Home extends React.Component<ComponentProps> {
         }
     }
 }
+export default Store.withStore(Home);

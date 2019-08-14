@@ -2,14 +2,12 @@ import React from "react";
 import "./Art.scss";
 import StyledText from "../../../../StyledText/StyledText";
 import { TextStyle } from "../../../../../constants/TextStyles";
-import SideNavigation from "../../../../Navigation/SideNavigation";
 import Card from "./Card/Card";
 
 export default class Art extends React.Component {
     render() {
         return(
             <div className="Art">
-                <SideNavigation/>
                 <div className="Content">
                     <div className="Information">
                         {/* <div className="GeneralInfo">
