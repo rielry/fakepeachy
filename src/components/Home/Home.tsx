@@ -8,6 +8,7 @@ import Resume from "./Panels/Resume/Resume";
 import SideNavigation from "../Navigation/SideNavigation";
 import Store, { StoreProps } from "../../store/store";
 import Information from "./Panels/Information/Information";
+import Projects from "./Panels/Projects/Projects";
 
 interface ComponentProps {
     displayedPanel: PanelTypes;
@@ -55,8 +56,8 @@ class Home extends React.Component<StoreProps & ComponentProps, ComponentState> 
         switch(this.props.displayedPanel) {
             case PanelTypes.ART:
                 return(<Art/>);
-            case PanelTypes.CODING:
-                return(<div>coding</div>)
+            case PanelTypes.PROJECTS:
+                return(<Projects/>);
             case PanelTypes.RESUME:
                 return(<Resume/>);
             case PanelTypes.INFO:

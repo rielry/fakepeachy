@@ -1,1 +1,13 @@
 @import "../../style/Variables.scss";
+
+body {
+    a {
+        text-decoration: none;
+        color: $accent-color;
+
+        &:hover {
+            text-decoration: underline;
+            transition: 0.3s;
+        }
+    }
+}

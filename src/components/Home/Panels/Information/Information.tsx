@@ -13,7 +13,7 @@ export default class Information extends React.Component {
                         <StyledText style={TextStyle.BODY}>
                             This site was created using ReactJS with TypeScript and Undux.
                             <br/>
-                            Checkout <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">this</a> nifty tutorial on React!
+                            Check out <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">this</a> nifty tutorial on React!
                         </StyledText>
                     </div>
                     <div className="Credits">
