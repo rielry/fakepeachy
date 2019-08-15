@@ -7,6 +7,6 @@ export enum PanelTypes {
     ABOUT = "About",
     RESUME = "Resume",
     ART = "Art",
-    CODING = "Coding",
+    PROJECTS = "Projects",
     INFO = "Information"
 }

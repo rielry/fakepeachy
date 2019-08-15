@@ -29,14 +29,14 @@ export default class About extends React.Component {
                             During my spare time, I like to paint, draw, play music, take photos, and of course, code!
                         </StyledText>
                         <StyledText style={TextStyle.BODY}>
-                            This website was created with React, TypeScript, and Undux. Please take a look around!
+                            This website was created with React, TypeScript, and Undux. The site is still under some construction, but please take a look around!
                         </StyledText>
                         
                     </div>
                     <div className="ProfilesWrapper">
                         <div className="Profiles">
-                            <Profile img={GitHub} link={"www.github.com/rielry"}/>
-                            <Profile img={LinkedIn} link={"www.linkedin.com/in/rileyjhi/"}/>
+                            <Profile img={GitHub} link={"http://www.github.com/rielry"}/>
+                            <Profile img={LinkedIn} link={"http://www.linkedin.com/in/rileyjhi/"}/>
                         </div>
                     </div>
                 </div>
