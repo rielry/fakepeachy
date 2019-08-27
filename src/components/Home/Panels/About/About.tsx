@@ -2,7 +2,7 @@ import React from "react";
 import "./About.scss";
 import StyledText from "../../../StyledText/StyledText";
 import { TextStyle } from "../../../../constants/TextStyles";
-import Profile from "./Profile/Profile";
+import SocialMedia from "./SocialMedia/SocialMedia";
 import GitHub from "../../../../constants/Icons/GitHub.png";
 import LinkedIn from "../../../../constants/Icons/LinkedIn.png";
 import MainImage from "../../../../constants/Images/MainImage.png";
@@ -35,8 +35,8 @@ export default class About extends React.Component {
                     </div>
                     <div className="ProfilesWrapper">
                         <div className="Profiles">
-                            <Profile img={GitHub} link={"http://www.github.com/rielry"}/>
-                            <Profile img={LinkedIn} link={"http://www.linkedin.com/in/rileyjhi/"}/>
+                            <SocialMedia img={GitHub} link={"http://www.github.com/rielry"}/>
+                            <SocialMedia img={LinkedIn} link={"http://www.linkedin.com/in/rileyjhi/"}/>
                         </div>
                     </div>
                 </div>
