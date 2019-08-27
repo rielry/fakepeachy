@@ -16,9 +16,6 @@ export default class Information extends React.Component {
                             Check out <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">this</a> nifty tutorial on React!
                         </StyledText>
                     </div>
-                    <div className="Credits">
-                        <StyledText style={TextStyle.DISPLAY}>Credits</StyledText>
-                    </div>
                 </div>
             </div>
         )
