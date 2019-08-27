@@ -14,3 +14,12 @@
         }
     }
 } 
+
+@media (max-width: $small-screen) {
+    .Home {
+        flex-direction: column;
+        .Panel {
+            width: 100%;
+        }
+    }
+}

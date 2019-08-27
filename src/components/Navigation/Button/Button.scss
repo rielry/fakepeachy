@@ -18,6 +18,7 @@
     .SelectedIcon {
         background-color: lighten($accent-color, 40%);
     }
+
     .Button {
         position: relative;
         top: 2px;
@@ -28,15 +29,27 @@
         }
     }
 
-    &:hover {
-        .Icon {
-            height: 30px;
-            width: 30px;
-            border-radius: 15px;
-            transition: 0.3s;
+    @media (min-width: 601px) {
+        &:hover {
+            .Icon {
+                height: 30px;
+                width: 30px;
+                border-radius: 15px;
+                transition: 0.3s;
+            }
+            .Button {
+                top: 5px;
+            }
         }
+    }
+
+    @media (max-width: $small-screen) {
         .Button {
-            top: 5px;
+            margin-bottom: 0px;
+        }
+
+        .Icon, .SelectedIcon {
+            margin-right: 5px;
         }
     }
 }

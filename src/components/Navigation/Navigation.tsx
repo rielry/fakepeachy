@@ -28,10 +28,10 @@ class Navigation extends React.Component<StoreProps & ComponentProps> {
                             <StyledText style={TextStyle.BODY}>University of Nebraska - Lincoln</StyledText>
                         </div>
                     </div>
-                    <div className="Buttons">
+                </div>
+                <div className="Buttons">
                         {this.getButtons()}
                     </div>
-                </div>
             </div>
         )
     }
