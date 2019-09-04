@@ -26,6 +26,16 @@ class Home extends React.Component<StoreProps & ComponentProps, ComponentState> 
         }
     }
 
+    resize = () => this.forceUpdate()
+
+    componentDidMount() {
+    window.addEventListener('resize', this.resize)
+    }
+
+    componentWillUnmount() {
+    window.removeEventListener('resize', this.resize)
+    }
+
     render() {
         return (
             <div className="Home">
