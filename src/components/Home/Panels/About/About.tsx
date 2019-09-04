@@ -5,7 +5,7 @@ import { TextStyle } from "../../../../constants/TextStyles";
 import SocialMedia from "./SocialMedia/SocialMedia";
 import GitHub from "../../../../constants/Icons/GitHub.png";
 import LinkedIn from "../../../../constants/Icons/LinkedIn.png";
-import MainImage from "../../../../constants/Images/MainImage.png";
+import MainImage from "../../../../constants/Images/main.jpg";
 
 
 export default class About extends React.Component {

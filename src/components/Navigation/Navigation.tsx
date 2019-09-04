@@ -5,6 +5,7 @@ import Button from "./Button/Button";
 import Store, { StoreProps } from "../../store/store";
 import StyledText from "../StyledText/StyledText";
 import { TextStyle } from "../../constants/TextStyles";
+import Avatar from '../../constants/Images/avatar.jpg';
 
 interface ComponentProps {
     slide?: Boolean,
@@ -17,8 +18,7 @@ class Navigation extends React.Component<StoreProps & ComponentProps> {
             <div className="Navigation">
                 <div className="Profile">
                     <div className="Image">
-                        <div className="placeholder"></div>
-                        {/* <img src="./info.png"></img> */}
+                        <img src={Avatar}></img>
                     </div>
                     <div className="Bio">
                         <div className="Name">
@@ -30,8 +30,8 @@ class Navigation extends React.Component<StoreProps & ComponentProps> {
                     </div>
                 </div>
                 <div className="Buttons">
-                        {this.getButtons()}
-                    </div>
+                    {this.getButtons()}
+                </div>
             </div>
         )
     }

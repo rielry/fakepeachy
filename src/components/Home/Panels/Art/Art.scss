@@ -5,6 +5,7 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
+    padding: 20px 0;
     .Content {
         display: flex;
         flex-direction: row;
@@ -12,9 +13,6 @@
             width: 20vw;
             min-width: 250px;
             padding: 0px 5px;
-            .GeneralInfo {
-                padding-top: 20px;
-            }
             .DisplayedInfo {
                 border-radius: 2px;
                 border: 1px dotted $accent-color;
@@ -41,4 +39,38 @@
             overflow: auto;
         }
     }
+}
+
+
+@media (max-width: $small-screen) {
+    .Navigation {
+        display: flex;
+    }
+    .SideNavigation {
+        display: none;
+    }
+
+    .Art {
+        padding: 5px 0;
+        .Content {
+            flex-direction: column;
+            .Information {
+                width: 100vw;
+                height: auto;
+                .DisplayedInfo {
+                    position: relative;
+                }
+            }
+            .Display {
+                width: 100vw;
+                height: 70vh;
+            }
+            .Gallery {
+                width: 100vw;
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+    
 }

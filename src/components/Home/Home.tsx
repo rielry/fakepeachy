@@ -29,17 +29,11 @@ class Home extends React.Component<StoreProps & ComponentProps, ComponentState> 
     render() {
         return (
             <div className="Home">
-                {this.getNavigation()}
+                <Navigation handleClick={this.toggleNavigation}/>
+                <SideNavigation handleClick={this.toggleNavigation}/>
                 {this.getPanelContent()}
             </div>
         )
-    }
-
-    getNavigation() {
-        if(this.state.fullNav) {
-            return (<Navigation handleClick={this.toggleNavigation}/>);
-        } 
-        return(<SideNavigation handleClick={this.toggleNavigation}/>);
     }
 
     toggleNavigation = () => {

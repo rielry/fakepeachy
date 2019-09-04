@@ -60,18 +60,19 @@
         .Buttons {
             display: flex;
             flex-direction: row;
-            margin-top: 20px;
+            margin: 5px;
+
         }
         .Profile {
             .Image {
                 display: block;
                 position: relative;
-                width: 175px;
-                height: 175px;
+                width: 100px;
+                height: 100px;
                 margin: 0 auto;
                 .placeholder {
-                    width: 175px;
-                    height: 175px;
+                    width: 100px;
+                    height: 100px;
                     border-radius: 100px;
                     background-color: white;
                 }
