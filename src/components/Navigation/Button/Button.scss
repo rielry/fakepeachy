@@ -42,16 +42,20 @@
             }
         }
     }
+}
 
-    @media (max-width: $small-screen) {
+@media (max-width: $small-screen) {
+    .ButtonGroup {
+        width: auto;
         .Button {
             margin-bottom: 0px;
             .StyledText {
                 color: $primary-color;
                 font-size: 10px;
+                margin: 0 auto;
+                display: block;
             }
         }
-
         .Icon, .SelectedIcon {
             display: none;
         }

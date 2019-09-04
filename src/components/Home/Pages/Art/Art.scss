@@ -24,7 +24,6 @@
         .Display {
             width: 50vw;
             padding: 10px;
-            min-width: 400px;
             .Canvas {
                 border-radius: 2px;
                 width: 100%;
@@ -39,6 +38,13 @@
             overflow: auto;
         }
     }
+}
+
+@media (min-width: 601px) {
+    // .Display {
+
+    //     min-width: 400px;
+    // }
 }
 
 
@@ -62,7 +68,7 @@
                 }
             }
             .Display {
-                width: 100vw;
+                width: 95%;
                 height: 70vh;
             }
             .Gallery {
