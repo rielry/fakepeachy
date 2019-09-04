@@ -29,11 +29,19 @@ class Home extends React.Component<StoreProps & ComponentProps, ComponentState> 
     render() {
         return (
             <div className="Home">
-                <Navigation handleClick={this.toggleNavigation}/>
-                <SideNavigation handleClick={this.toggleNavigation}/>
+                {this.getNavigation()}
                 {this.getPanelContent()}
             </div>
         )
+    }
+
+    getNavigation = () => {
+        if(window.innerWidth > 600) {
+            if(!this.state.fullNav) { 
+                return (<SideNavigation handleClick={this.toggleNavigation}/>);
+            }
+        }
+        return (<Navigation handleClick={this.toggleNavigation}/>);
     }
 
     toggleNavigation = () => {
@@ -57,7 +65,7 @@ class Home extends React.Component<StoreProps & ComponentProps, ComponentState> 
             case PanelTypes.INFO:
                 return(<Information/>);
             default:
-                return (<About/>)
+                return (<About><Navigation handleClick={this.toggleNavigation}/></About>)
         }
     }
 }
