@@ -7,7 +7,6 @@ import GitHub from "../../../../constants/Icons/GitHub.png";
 import LinkedIn from "../../../../constants/Icons/LinkedIn.png";
 import MainImage from "../../../../constants/Images/main.jpg";
 
-
 export default class About extends React.Component {
     render() {
         return (
@@ -40,7 +39,7 @@ export default class About extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
         )
     }
 }
