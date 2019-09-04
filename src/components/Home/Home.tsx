@@ -29,14 +29,32 @@ class Home extends React.Component<StoreProps & ComponentProps, ComponentState> 
     resize = () => this.forceUpdate()
 
     componentDidMount() {
-    window.addEventListener('resize', this.resize)
+        window.addEventListener('resize', this.resize)
     }
 
     componentWillUnmount() {
-    window.removeEventListener('resize', this.resize)
+        window.removeEventListener('resize', this.resize)
     }
 
     render() {
+        return (
+            this.renderHome()
+        )
+    }
+
+    renderHome() {
+        const {store} = this.props;
+        if(store.get("modalDisplayed")) {
+            let style = {
+                overflow: "hidden"
+            }
+            return(
+                <div className="Home" style={style}>
+                    {this.getNavigation()}
+                    {this.getPanelContent()}
+                </div>
+            );
+        } 
         return (
             <div className="Home">
                 {this.getNavigation()}

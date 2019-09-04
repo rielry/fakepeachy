@@ -1,6 +1,8 @@
 @import "../../style/Variables.scss";
 
 .Home {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     .Panel {

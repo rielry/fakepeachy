@@ -3,11 +3,18 @@ import "./Art.scss";
 import StyledText from "../../../StyledText/StyledText";
 import { TextStyle } from "../../../../constants/TextStyles";
 import Card from "./Card/Card";
+import Modal from "../../../Modal/Modal";
 
 export default class Art extends React.Component {
     render() {
         return(
             <div className="Art">
+                <Modal>
+                    <StyledText style={TextStyle.HEADER}>
+                        Hey! Real quickly!!
+                    </StyledText>
+                    <StyledText style={TextStyle.BODY}>Currently, there is no art uploaded to the site. This will soon be changed!</StyledText>
+                </Modal>
                 <div className="Content">
                     <div className="Information">
                         <div className="DisplayedInfo">

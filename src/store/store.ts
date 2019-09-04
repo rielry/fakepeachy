@@ -4,12 +4,16 @@ import { PageTypes, PanelTypes } from '../constants/PageTypes';
 
 type State = {
     pageDisplayed: PageTypes,
-    panelDisplayed: PanelTypes
+    panelDisplayed: PanelTypes,
+    modalDisplayed: Boolean,
+    firstVisit: Boolean
 }
 
 const initialState: State = {
     pageDisplayed: PageTypes.NAME_PLATE,
-    panelDisplayed: PanelTypes.ABOUT
+    panelDisplayed: PanelTypes.ABOUT,
+    modalDisplayed: false,
+    firstVisit: true
 }
 
 export default createConnectedStore(initialState, effects);

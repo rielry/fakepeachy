@@ -1,0 +1,35 @@
+@import "../../style/Variables.scss";
+
+.ModalOff {
+    display: none;
+}
+.Blinder {
+    position: absolute;
+    z-index: 300;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($accent-color, 0.7);
+    @media (max-size: $small-screen) {
+        background-color: rgba($accent-color, 0.8);
+    }
+    .Modal {
+        position: relative;
+        margin: 0 auto;
+        width: 70vw;
+        height: 60vh;
+        @media (max-width: $small-screen) {
+            width: 90vw;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .Close {
+            margin: 10px;
+            cursor: pointer;
+            color: $tertiary-color;
+        }
+    }
+}
