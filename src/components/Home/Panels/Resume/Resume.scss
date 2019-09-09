@@ -19,16 +19,27 @@
         .Scholarship {
             display: flex;
             flex-direction: row;
+            @media (max-width: $small-screen) {
+                flex-direction: column;
+                margin-bottom: 10px;
+            }
             justify-content: space-between;
         }
         .Experience {
             display: flex;
             flex-direction: row;
+            @media (max-width: $small-screen) {
+                flex-direction: column;
+            }
             margin: 10px 0px;
             border-radius: 2px;
             border: 1px dotted $accent-color;
             padding: 3px;
             .AboutExperience {
+                @media (max-width: $small-screen) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
                 margin-right: 10px;
                 width: 35%;
             }

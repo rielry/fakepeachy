@@ -18,7 +18,6 @@ class AppBody extends React.Component<StoreProps> {
         entrance!.style.transform = "translateY(-3000px)";
         entrance!.style.transition = "3s";
 
-
         const {store} = this.props;
         store.set("pageDisplayed")(PageTypes.MAIN_PAGE);
     }
