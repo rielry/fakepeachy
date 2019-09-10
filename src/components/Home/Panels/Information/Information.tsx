@@ -15,6 +15,14 @@ export default class Information extends React.Component {
                             <br/>
                             Check out <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">this</a> nifty tutorial on React!
                         </StyledText>
+                        <br/><br/><br/>
+                        
+                        <StyledText style={TextStyle.DISPLAY}>Fonts used</StyledText>
+                        <div className="FontsUsed">
+                            <StyledText style={TextStyle.HEADER}>Josefin Slab</StyledText>
+                            <StyledText style={TextStyle.DISPLAY}>Raleway Dots</StyledText>
+                            <StyledText style={TextStyle.BODY}>Quicksand</StyledText>
+                        </div>
                     </div>
                 </div>
             </div>

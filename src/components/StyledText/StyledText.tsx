@@ -4,6 +4,7 @@ import { TextStyle } from "../../constants/TextStyles";
 
 interface ComponentProps {
     style: TextStyle
+    link?: string
 }
 
 type StyledTextProps = ComponentProps;
