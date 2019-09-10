@@ -22,14 +22,14 @@ export default class About extends React.Component {
                     </div>
                     <div className="Text">
                         <StyledText style={TextStyle.BODY}>
-                            Hi there, I'm so happy to see you here!  
+                            Hi there, it's so good to see you here!  
                         </StyledText>
                         <StyledText style={TextStyle.BODY}>
                             My name is Riley. I'm a senior at University of Nebraska - Lincoln, studying computer science and studio art.
-                            During my spare time, I like to paint, draw, play music, take photos, and of course, code!
+                            I love pretty things and rainy days 😸😸😸😸
                         </StyledText>
                         <StyledText style={TextStyle.BODY}>
-                            This website was created with React, TypeScript, and Undux. The site is still under some construction, but please take a look around!
+                            This website was created with React, TypeScript, and Undux. The site is still under some construction, but please take a look around anyways!
                         </StyledText>
                         
                     </div>
