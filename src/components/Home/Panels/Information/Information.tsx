@@ -14,7 +14,9 @@ export default class Information extends React.Component {
                             This site was created using ReactJS and Undux. It is hosted on a vps (virtual private server), and run on an nginx server. 
                             A basic knowledge of HTML/CSS, TypeScript/JavaScript, and comfort with command line interfaces is required. I recommend using SASS as well.  
                             <br/><br/>
-                            Check out these tutorials: 
+                            If you'd like, you can look at the source code for this site on my <a href="https://github.com/rielry/snail-ko.com" target="_blank">GitHub page</a>. It's far from perfect, don't roast me too much!!
+                            <br/><br/>
+                            Check out these tutorials too: 
                             <br/>
                             <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">React tutorial</a>
                             <br/>
