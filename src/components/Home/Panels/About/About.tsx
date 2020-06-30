@@ -14,7 +14,7 @@ export default class About extends React.Component {
             <div className="Panel">
                 <div className="Content">
                     <div className="Welcome">
-                        <StyledText style={TextStyle.DISPLAY}>Welcome, thanks for stopping by!</StyledText>
+                        <StyledText style={TextStyle.DISPLAY}>well howdy do :')</StyledText>
                     </div>
                     <div className="Image">
                         <img src={MainImage}></img>
@@ -22,21 +22,21 @@ export default class About extends React.Component {
                     </div>
                     <div className="Text">
                         <StyledText style={TextStyle.BODY}>
-                            Hi there, it's so good to see you here!  
+                            Hi there, it's so good to see you here!
                         </StyledText>
                         <StyledText style={TextStyle.BODY}>
                             My name is Riley. I'm a senior at University of Nebraska - Lincoln, studying computer science and studio art.
-                            I love pretty things and rainy days 😸😸😸😸
+                            I love aliens and vampires, and I hate geese.
                         </StyledText>
                         <StyledText style={TextStyle.BODY}>
                             This website was created with React, TypeScript, and Undux. The site is still under some construction, but please take a look around anyways!
                         </StyledText>
-                        
+
                     </div>
                     <div className="ProfilesWrapper">
                         <div className="Profiles">
-                            <SocialMedia img={GitHub} link={"http://www.github.com/rielry"}/>
-                            <SocialMedia img={LinkedIn} link={"http://www.linkedin.com/in/rileyjhi/"}/>
+                            <SocialMedia img={GitHub} link={"http://www.github.com/rielry"} />
+                            <SocialMedia img={LinkedIn} link={"http://www.linkedin.com/in/rileyjhi/"} />
                         </div>
                     </div>
                 </div>
