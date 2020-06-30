@@ -25,6 +25,7 @@ export default class Experiences extends React.Component {
                         title="Undergraduate Teaching Assistant"
                         employer="University of Nebraska - Lincoln"
                         startDate="January 2017"
+                        endDate="August 2019"
                         location="Lincoln, NE"
                         description={
                             [
@@ -37,6 +38,7 @@ export default class Experiences extends React.Component {
                         title="Undergraduate Research Assistant"
                         employer="University of Nebraska - Lincoln"
                         startDate="January 2018"
+                        endDate="January 2019"
                         location="Lincoln, NE"
                         description={
                             [

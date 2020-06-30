@@ -9,19 +9,19 @@ export default class Projects extends React.Component {
         return (
             <div className="Panel">
                 <div className="Content">
-                    <Project 
+                    <Project
                         image={GEA}
                         description={
-                            "Launched in December 2018, George Eliot Archive is an online archive documenting everything related to the celebrated Victorian novelist best known as George Eliot. The website was created for the Omeka platform, and written with HTML, CSS, and JavaScript with a quick dash of PHP."
+                            "Launched in December 2018, George Eliot Archive is an online archive documenting everything related to the celebrated Victorian novelist best known as George Eliot. The website was created for the Omeka platform, and written with HTML, CSS, and JavaScript with a quick sprinkle of PHP."
                         }
                         link="https://www.georgeeliotarchive.org"
                     />
-                    <Project 
+                    <Project
                         image={RelationshipWeb}
                         description={
                             "The George Eliot relationship web was built for the George Eliot Archive. The web outlines individuals that George Eliot knew throughout her life, and places them on the map based on a \"closeness\" rating assigned by the team based on research. Clicking on an individual's node gives a brief description and significant details about their relationship with Eliot. The web was created with D3.js library."
                         }
-                        link="https://www.georgeeliotarchive.org/relationship-web"
+                        link="https://www.georgeeliotarchive.org/relationships"
                     />
                 </div>
             </div>
