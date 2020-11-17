@@ -5,6 +5,7 @@ import { TextStyle } from "../../../../constants/TextStyles";
 import SocialMedia from "./SocialMedia/SocialMedia";
 import GitHub from "../../../../constants/Icons/GitHub.png";
 import LinkedIn from "../../../../constants/Icons/LinkedIn.png";
+import Instagram from "../../../../constants/Icons/Instagram.png";
 import MainImage from "../../../../constants/Images/main.jpg";
 
 
@@ -22,19 +23,16 @@ export default class About extends React.Component {
                     </div>
                     <div className="Text">
                         <StyledText style={TextStyle.BODY}>
-                            Hi there, it's so good to see you here!
+                            I am an artist specializing in small drawings and paintings inspired by mythology and folklore. My unofficial goal is to be turned into a vampire and meet alients. I hate geese.
                         </StyledText>
                         <StyledText style={TextStyle.BODY}>
-                            My name is Riley. I'm a senior at University of Nebraska - Lincoln, studying computer science and studio art.
-                            I love aliens and vampires, and I hate geese.
-                        </StyledText>
-                        <StyledText style={TextStyle.BODY}>
-                            This website was created with React, TypeScript, and Undux. The site is still under some construction, but please take a look around anyways!
+                            This website was created with React, TypeScript, and Undux. The site is still under quite a bit of construction, so don't be roasting me so much!!!
                         </StyledText>
 
                     </div>
                     <div className="ProfilesWrapper">
                         <div className="Profiles">
+                            <SocialMedia img={Instagram} link={"https://www.instagram.com/fakepeachy.art/"} />
                             <SocialMedia img={GitHub} link={"http://www.github.com/rielry"} />
                             <SocialMedia img={LinkedIn} link={"http://www.linkedin.com/in/rileyjhi/"} />
                         </div>
