@@ -22,11 +22,7 @@ export default class About extends React.Component {
                     </div>
                     <div className="Text">
                         <StyledText style={TextStyle.BODY}>
-                            Hi there, it's so good to see you here!
-                        </StyledText>
-                        <StyledText style={TextStyle.BODY}>
-                            My name is Riley. I'm a senior at University of Nebraska - Lincoln, studying computer science and studio art.
-                            I love aliens and vampires, and I hate geese.
+                            I am an artist specializing in small drawings and paintings inspired by mythology and folklore. My unofficial goal is to be turned into a vampire and meet alients. I hate geese.
                         </StyledText>
                         <StyledText style={TextStyle.BODY}>
                             This website was created with React, TypeScript, and Undux. The site is still under some construction, but please take a look around anyways!

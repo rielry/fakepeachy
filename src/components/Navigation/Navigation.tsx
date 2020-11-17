@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navigation.scss";
-import {PanelTypes} from "../../constants/PageTypes";
+import { PanelTypes } from "../../constants/PageTypes";
 import Button from "./Button/Button";
 import Store, { StoreProps } from "../../store/store";
 import StyledText from "../StyledText/StyledText";
@@ -14,7 +14,7 @@ interface ComponentProps {
 
 class Navigation extends React.Component<StoreProps & ComponentProps> {
     render() {
-        return(
+        return (
             <div className="Navigation">
                 <div className="Profile">
                     <div className="Image">
@@ -25,7 +25,7 @@ class Navigation extends React.Component<StoreProps & ComponentProps> {
                             <StyledText style={TextStyle.LABEL}>Riley Jhi</StyledText>
                         </div>
                         <div className="Info">
-                            <StyledText style={TextStyle.BODY}>University of Nebraska - Lincoln</StyledText>
+                            <StyledText style={TextStyle.BODY}>Artist, software engineer, human</StyledText>
                         </div>
                     </div>
                 </div>
@@ -37,25 +37,25 @@ class Navigation extends React.Component<StoreProps & ComponentProps> {
     }
 
     handleClick = (selectedPanel: PanelTypes) => {
-        if(selectedPanel == PanelTypes.ART) {
+        if (selectedPanel == PanelTypes.ART) {
             this.props.handleClick();
         }
 
-        const {store} = this.props;
+        const { store } = this.props;
         store.set("panelDisplayed")(selectedPanel);
     }
 
     getButtons() {
-        const {store} = this.props;
+        const { store } = this.props;
         let buttons: JSX.Element[] = [];
 
-        for(let type in PanelTypes) {
+        for (let type in PanelTypes) {
             let panel = PanelTypes[type] as PanelTypes;
             buttons.push(
-                <Button 
+                <Button
                     type={panel}
                     handleClick={this.handleClick}
-                    selected={store.get("panelDisplayed")==panel}
+                    selected={store.get("panelDisplayed") == panel}
                     key={type}
                 />
             );
